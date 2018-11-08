@@ -18,4 +18,4 @@ class ArticleParser(object):
 
             return Article(author, title, content, date)
         except Exception as e:
-            print("Not an article {0}").format(e)
+            print("Not an article {0}".format(e))

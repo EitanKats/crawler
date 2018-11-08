@@ -17,4 +17,4 @@ class TinyDBAccessor(object):
             if not db.contains(article_record.title == serialized_article.get('title')):
                 db.insert(serialized_article)
         except Exception as e:
-            print("Issues encountered while accessing the DataBase : {0}").format(e)
+            print("Issues encountered while accessing the DataBase : {0}".format(e))
