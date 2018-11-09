@@ -8,7 +8,7 @@ Make sure that you have docker installed.
 
 First of all follow the readme in this [git](https://github.com/dperson/torproxy), after the container runs and works its time to install the crawler.
 
-Now please clone the code from this repository.
+clone this repository.
 
 There are a couple of ways to run this:
 
@@ -22,7 +22,8 @@ docker run -e "DOCKER_HOST=$(ip -4 addr show docker0 | grep -Po 'inet \K[\d.]+')
 
 this sets the environmental variable DOCKER_HOST so that the code within the container uses the proxy that the Tor container provides.
 
-Change the config.py so it matches the Tor docker port
+Change the config.py so it matches the Tor docker port, and now build the image.
+
 
 The configuration's default setting of the proxy is to localhost and port 9150.
 
