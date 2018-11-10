@@ -1,6 +1,7 @@
 from tinydb import TinyDB, Query
 
 import config
+from logger import logger
 
 db = TinyDB(config.DATABASE_PATH, default_table=config.TABLE_NAME)
 article_record = Query()
@@ -17,4 +18,4 @@ class TinyDBAccessor(object):
             if not db.contains(article_record.title == serialized_article.get('title')):
                 db.insert(serialized_article)
         except Exception as e:
-            print("Issues encountered while accessing the DataBase : {0}".format(e))
+            logger.exception(f"Issues encountered while accessing the DataBase : (Error: {str(e)})")

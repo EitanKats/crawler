@@ -19,3 +19,5 @@ ARTICLE_DATE_FORMAT = 'DD MMM YYYY, HH:mm:ss'
 DATABASE_PATH = 'data/articles.json'
 
 TABLE_NAME = 'articles'
+
+LOG_LOCATION = 'data/crawl.log'
