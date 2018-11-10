@@ -54,6 +54,8 @@ edit the /etc/crontab file and add the following line
 ```
 In the example above, it is set to run every 1 minute.
 
+You can use [this](https://crontab.guru) web site to generate a schedule you want 
+
 Remeber to reload cron configuration for it to run.
 
 ##
